@@ -3,8 +3,10 @@
     num_list = list(map(int, num_list))
 ~~~
 2. String 내장함수 upper(), lower()
-    string.upper()
-    string.lower()
+~~~
+string.upper()
+string.lower()
+~~~
     
 3. split()
 - split( )은 공백이 1개이건 2개이건 n개이건 상관없이 무조건 1개로 보고 처리  
