@@ -1,4 +1,5 @@
 1. list 내 string -> int 등 type 변환 **list(map()) 사용**
+
     num_list = list(map(int, num_list))
 
 2. String 내장함수 upper(), lower()
@@ -26,4 +27,6 @@ print(string.split(" "))
 - '구분자'.join(리스트)를 이용하면 리스트의 값과 값 사이에 '구분자'에 들어온 구분자를 넣어서 하나의 문자열로 합쳐줍니다.
 - '_'.join(['a', 'b', 'c']) 라 하면 "a_b_c" 와 같은 형태로 문자열을 만들어서 반환해 줍니다.
 
+
 answer = ''.join(string)
+
