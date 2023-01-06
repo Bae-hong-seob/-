@@ -9,6 +9,7 @@
 -- 추가적으로 split( )은 공백만 처리하는 것이 아니라 "\t" ( 탭 ), "\n" ( 엔터 ) 도 처리해줍니다.
 
 ~~~
+#word1 뒤에 공백 1개, word2 뒤에 공백 2개, word3 뒤에 공백 3개, word4 뒤에 공백 4개
 string = "word1 word2  word3    word4     "
 
 print(string.split())
