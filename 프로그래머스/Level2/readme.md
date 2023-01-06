@@ -8,11 +8,11 @@
 - split(" ")은 공백 1개, 1개를 각각의 공백으로 따로따로 처리합니다.
 -- 추가적으로 split( )은 공백만 처리하는 것이 아니라 "\t" ( 탭 ), "\n" ( 엔터 ) 도 처리해줍니다.
 
-'''
+~~~
 string = "word1 word2  word3    word4     "
 
 print(string.split())
 > ['word1', 'word2', 'word3', 'word4']
 print(string.split(" "))
 > ['word1', 'word2', '', 'word3', '', '', 'word4', '', '', '', '']
-'''
+~~~
