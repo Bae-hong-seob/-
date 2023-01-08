@@ -4,11 +4,14 @@
 ~~~
     num_list = list(map(int, num_list))
 ~~~
-2. String 내장함수 upper(), lower()
+2. String 내장함수 upper(), lower(), replace('what', 'how')
 ~~~
 string.upper()
 string.lower()
+output = string.replace('what','how') #string은 변함없이 바꾼값을 return한다는 점을 유의
 ~~~
+- String : replace 모두바꿈, List : remove 맨 앞에 하나만 삭제
+
 
 3. list() : 문자열 문자 하나하나 -> 리스트의 원소 하나하나로 변환
 ~~~
