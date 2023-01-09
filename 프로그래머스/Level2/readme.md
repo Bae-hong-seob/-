@@ -72,6 +72,13 @@ dp.copy() # 덱 복사
 dp.count(x) #x와 같은 원소의 개수를 계산
 ~~~
 
+8. format(num, 'type') -> format(n, 'b) 2진수, 8진수, 16진수 변환 함수
+~~~
+b = format(value, 'b') #2진수
+o = format(value, 'o') #8진수
+h = format(value, 'x') #16진수
+~~~
+
 # 문제 유형 정리
 
 1. A리스트와 B리스트의 인자들을 곱하고 더한 값의 최솟값을 찾는 문제
