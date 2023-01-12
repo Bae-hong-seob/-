@@ -3,7 +3,6 @@ from collections import deque
 def solution(n, words):
     num = 0
     count = 0
-    first_word = words[0]
     
     dq = deque()
     
