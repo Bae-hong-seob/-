@@ -79,6 +79,20 @@ o = format(value, 'o') #8진수
 h = format(value, 'x') #16진수
 ~~~
 
+9. 최대공약수
+~~~
+from fractions import gcd
+
+answer = gcd(a,b) #a와b의 최대공약수 return
+~~~
+
+10. 최소공배수 : a*b / gcd(a,b)
+~~~
+from fractions import gcd
+
+answer = a*b / gcd(a,b)
+~~~
+
 # 문제 유형 정리
 
 1. A리스트와 B리스트의 인자들을 곱하고 더한 값의 최솟값을 찾는 문제
