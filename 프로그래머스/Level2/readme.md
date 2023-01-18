@@ -110,7 +110,7 @@ answer = math.factorial(n)
 2. 괄호,알파벳 등 "짝지어졌는지" -> deque(=스택)을 활용하는 대표적인 문제 유형
 - list에서 pop 진행하는거랑 deque에서 pop 진행하는거랑 시간차이남. 되도록이면 deque구조를 사용할 것.
 - s에서 for문을 돌며, 여는 괄호 : '(' 가 나오면 stack에 element를 추가하고, 닫는 괄호 : ')' 가 나오면 stack에서 element를 뺌.
-- 다 끝나고 len(dq)==0 인지 검사할 것 ex) '((('
+- <mark>다 끝나고 len(dq)==0 인지 검사할 것 ex) '(((' </mark>
 - 비슷한 문제로는 백준의 쇠막대기 문제가 있습니다.
 
 3. 알고리즘이 잘 떠오르지 않을 때 : 전역탐색(Brute Force) 
