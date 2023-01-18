@@ -1,5 +1,5 @@
 # 자주 사용하는 함수 정리
-
+<span style="color:yellow">노란 글씨입니다.</span>
 1. list 내 string -> int 등 type 변환 **list(map()) 사용**
 ~~~
     num_list = list(map(int, num_list))
