@@ -100,7 +100,7 @@ import math
 n = 10
 answer = math.factorial(n)
 ~~~
-
+<span style="color:red">다 끝나고 len(dq)==0 인지 검사할 것 ex) '(((' </span>
 # 문제 유형 정리
 
 1. A리스트와 B리스트의 인자들을 곱하고 더한 값의 최솟값을 찾는 문제
@@ -111,7 +111,6 @@ answer = math.factorial(n)
 - list에서 pop 진행하는거랑 deque에서 pop 진행하는거랑 시간차이남. 되도록이면 deque구조를 사용할 것.
 - s에서 for문을 돌며, 여는 괄호 : '(' 가 나오면 stack에 element를 추가하고, 닫는 괄호 : ')' 가 나오면 stack에서 element를 뺌.
 - <mark> 다 끝나고 len(dq)==0 인지 검사할 것 ex) '(((' </mark>  
-<span style="color:red">다 끝나고 len(dq)==0 인지 검사할 것 ex) '(((' </span>
 - 비슷한 문제로는 백준의 쇠막대기 문제가 있습니다.
 
 3. 알고리즘이 잘 떠오르지 않을 때 : 전역탐색(Brute Force) 
