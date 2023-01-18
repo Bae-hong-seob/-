@@ -93,6 +93,14 @@ from fractions import gcd
 answer = a*b / gcd(a,b)
 ~~~
 
+11. math.factorial(n) 팩토리얼 계산
+~~~
+import math
+
+n = 10
+answer = math.factorial(n)
+~~~
+
 # 문제 유형 정리
 
 1. A리스트와 B리스트의 인자들을 곱하고 더한 값의 최솟값을 찾는 문제
@@ -132,3 +140,4 @@ def lcm(a, b):
 
 # 스스로 못 푼 문제
 1. 점프와 순간이동
+2. 멀리 뛰기 - 팩토리얼 문제 완전탐색으로 풀어서 시간초과 뜸
