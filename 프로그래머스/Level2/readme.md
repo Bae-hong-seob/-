@@ -100,7 +100,7 @@ import math
 n = 10
 answer = math.factorial(n)
 ~~~
-<span style="color:red">빨간색 글자 태그입니다.</span>
+
 # 문제 유형 정리
 
 1. A리스트와 B리스트의 인자들을 곱하고 더한 값의 최솟값을 찾는 문제
