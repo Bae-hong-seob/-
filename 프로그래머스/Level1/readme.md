@@ -70,3 +70,14 @@ def solution(x, n):
 ~~~
 return num_p == num_y
 ~~~
+
+## 리스트, 문자열 모두 for문 하나씩 접근 가능
+~~~
+x = ['1', '2', '3']
+int(c) for c in x
+~~~
+
+~~~
+x = 123
+int(c) for c in str(x)
+~~~
