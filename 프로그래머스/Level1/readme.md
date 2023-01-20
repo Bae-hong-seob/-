@@ -24,6 +24,17 @@ def digit_reverse(n):
     return list(map(int, reversed(str(n))))
 ~~~
 
+4. pow(), sqrt() 함수
+- pow(n,2) : return n**2 
+- sqrt(n) : return n 제곱근
+- 둘다 return float type
+~~~
+import math
+
+sqrt_n = math.sqrt(n)
+n = math.pow(sqrt_n,2)
+~~~
+
 4. 직관적인 for 문 사용 (if 문도 가능)
 ~~~
 #n=123, 각 자릿수 더하기
