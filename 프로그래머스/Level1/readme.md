@@ -48,7 +48,7 @@ def solution(n):
     return int("".join(n))
 ~~~
 
-4. 직관적인 for 문 사용 (if 문도 가능)
+## 직관적인 for 문 사용 (if 문도 가능)
 ~~~
 #n=123, 각 자릿수 더하기
 def solution(n):    
