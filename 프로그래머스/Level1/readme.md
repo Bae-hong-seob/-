@@ -66,7 +66,7 @@ def solution(x, n):
     return [x+x*i for i in range(n)]
 ~~~
 
-5. 직관적인 return문 사용
+## 직관적인 return문 사용
 ~~~
 return num_p == num_y
 ~~~
