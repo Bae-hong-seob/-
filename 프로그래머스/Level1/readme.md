@@ -24,7 +24,7 @@ def digit_reverse(n):
     return list(map(int, reversed(str(n))))
 ~~~
 
-4. pow(), sqrt() 함수
+4. import math - pow(), sqrt() 함수
 - pow(n,2) : return n**2 
 - sqrt(n) : return n 제곱근
 - 둘다 return float type
