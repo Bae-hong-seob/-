@@ -7,3 +7,10 @@
 for idx, value in enumerate(list):
   print(idx, value)
 ~~~
+
+2. 직관적인 for 문 사용
+~~~
+#n=123, 각 자릿수 더하기
+def solution(n):    
+    return sum([int(i) for i in str(n)])
+~~~
