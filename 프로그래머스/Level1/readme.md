@@ -52,3 +52,8 @@ def solution(n):
 def solution(n):
     return n+sum([i for i in range(1,n//2+1) if n%i ==0])
 ~~~
+
+5. 직관적인 return문 사용
+~~~
+return num_p == num_y
+~~~
