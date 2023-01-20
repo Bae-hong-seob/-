@@ -40,6 +40,14 @@ sqrt_n = math.sqrt(n)
 n = math.pow(sqrt_n,2)
 ~~~
 
+5. 리스트 -> 문자열 변환 = ''.join(list)함수 사용
+~~~
+def solution(n):
+    n = [i for i in str(n)]
+    n.sort(reverse=True)
+    return int("".join(n))
+~~~
+
 4. 직관적인 for 문 사용 (if 문도 가능)
 ~~~
 #n=123, 각 자릿수 더하기
