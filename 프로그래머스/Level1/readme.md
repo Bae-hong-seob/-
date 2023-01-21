@@ -54,6 +54,10 @@ def solution(seoul):
     return '김서방은 '+str(seoul.index('Kim'))+'에 있다'
 ~~~
 
+7. list, string 정렬 : .sort(reverse=True or False) 사용 | sorted(list, reverse=True or False) 사용.
+- .sort() 함수는 return 값이 없음.
+- sorted(list)는 list를 정렬하여 return
+
 ## 직관적인 for 문 사용 (if 문도 가능 else 문도 가능)
 ~~~
 #n=123, 각 자릿수 더하기
@@ -75,6 +79,11 @@ def solution(x, n):
 ## 직관적인 return문 사용
 ~~~
 return num_p == num_y
+~~~
+
+~~~
+#or 문도 적용 가능
+return sorted([n for n in arr if n%divisor == 0]) or [-1]
 ~~~
 
 ## 리스트, 문자열 모두 for문 하나씩 접근 가능
