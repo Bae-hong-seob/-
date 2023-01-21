@@ -64,7 +64,7 @@ for absolute, sign in zip(absolutes, signs):
   print(absolute, sign)
 ~~~
 
-## 직관적인 for 문 사용 (if 문도 가능 else 문도 가능)
+## 직관적인 for 문 사용 (if 문만 = for문 뒤에, if-else문 = for문 앞에)
 ~~~
 #n=123, 각 자릿수 더하기
 def solution(n):    
@@ -76,6 +76,13 @@ def solution(n):
 def solution(n):
     return n+sum([i for i in range(1,n//2+1) if n%i ==0])
 ~~~
+
+~~~
+# if-else 사용할 경우 for 문 앞에 적어야함.
+def solution(absolutes, signs):
+    return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))
+~~~
+
 ~~~
 #연산식도 가능
 def solution(x, n):
