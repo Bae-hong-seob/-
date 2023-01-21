@@ -48,6 +48,12 @@ def solution(n):
     return int("".join(n))
 ~~~
 
+6. .index('what') 함수
+~~~
+def solution(seoul):
+    return '김서방은 '+str(seoul.index('Kim'))+'에 있다'
+~~~
+
 ## 직관적인 for 문 사용 (if 문도 가능 else 문도 가능)
 ~~~
 #n=123, 각 자릿수 더하기
