@@ -58,6 +58,12 @@ def solution(seoul):
 - .sort() 함수는 return 값이 없음.
 - sorted(list)는 list를 정렬하여 return
 
+8. 반복문 zip(list, list)함수 잘 쓰기
+~~~
+for absolute, sign in zip(absolutes, signs):
+  print(absolute, sign)
+~~~
+
 ## 직관적인 for 문 사용 (if 문도 가능 else 문도 가능)
 ~~~
 #n=123, 각 자릿수 더하기
