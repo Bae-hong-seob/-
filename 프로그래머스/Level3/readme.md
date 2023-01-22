@@ -8,8 +8,19 @@
 ## 2. 부분집합 원소 곱의 최대값
 - 일단 외워. 고르게 분포하게 만드는게 최대값이야. 
 
+## 3. DFS, BFS 구현하기
+~~~
+def dfs(v):
+    visited[v] = True
+
+    for nei in range(n):    # 인접노드 탐구 
+        if not visited[nei] and computers[v][nei]:    # unvisited + 인접할 때 
+            dfs(nei)
+~~~
+
 # 다시 풀어볼 문제
 1. 이중우선순위큐 -> heapq 이용하여 다시 풀어볼 것
 - https://littlefoxdiary.tistory.com/3 참고
 2. 부분집합 원소 곱의 최대값 구하기.
 - 증명해봐.
+3. 네트워크 -> DFS, BFS 두 개다 구현해보고 풀어보기
