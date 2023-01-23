@@ -1,18 +1,29 @@
+import heapq
+
 def solution(operations):
-    dq = []
-    for i in operations:
-        order, num = i.split()
+    
+    heap = []
+    
+    for operation in operations:
+        order , value = operation.split()
         if order=='I':
-            dq.append(int(num))
-        elif len(dq)==0:
-            continue
+            heapq.heappush(heap,int(value))
         else:
-            if num == '1':
-                dq.pop(dq.index(max(dq)))
-            else:
-                dq.pop(dq.index(min(dq)))
-                
-    if len(dq)==0:
+            if len(heap) == 0:
+                continue
+            
+            elif order=='D' and value=='-1': #최솟값 삭제
+                heapq.heappop(heap)
+            else: #최댓값 삭제 
+                heap = [-w for w in heap]
+                heapq.heapify(heap)
+                heapq.heappop(heap)
+                heap = [-w for w in heap]
+                heapq.heapify(heap)
+    
+    heap.sort()
+    
+    if len(heap)==0:
         return [0,0]
     else:
-        return [max(dq),min(dq)]
+        return [heap[-1], heap[0]]
