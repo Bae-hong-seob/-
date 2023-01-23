@@ -21,6 +21,8 @@ def dfs(v):
 ## 4. heapq 구조 사용하기 -> max heapq, min heapq
 - heapq 는 일반적으로 가장 작은 value가 root node
 - max_heapq를 만들기 위해서는 -value list로 하면된다.
+- heapify 이거 생각보다 시간복잡도 큼. O(N)
+- heappush, heappop하면 알아서 heap 구조가 유지된다.
 ~~~
 import heapq #import 문에서는 heapq -> q 주의
    
