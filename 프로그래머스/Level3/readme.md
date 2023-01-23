@@ -18,6 +18,21 @@ def dfs(v):
             dfs(nei)
 ~~~
 
+## 4. heapq 구조 사용하기 -> max heapq, min heapq
+- heapq 는 일반적으로 가장 작은 value가 root node
+- max_heapq를 만들기 위해서는 -value list로 하면된다.
+~~~
+import heapq
+   
+works = [4,3,3] # heapq
+works = [-w for w in works] #max heapq
+
+works = [-w for w in works] #max heapq
+heapq.heapify(works) #heaq 구조 만들기!
+i = heapq.heappop(works) #pop
+heapq.heappush(works, i) #push(heaq, value)
+~~~
+
 # 다시 풀어볼 문제
 1. 이중우선순위큐 -> heapq 이용하여 다시 풀어볼 것
 - https://littlefoxdiary.tistory.com/3 참고
