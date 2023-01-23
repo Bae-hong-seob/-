@@ -22,15 +22,16 @@ def dfs(v):
 - heapq 는 일반적으로 가장 작은 value가 root node
 - max_heapq를 만들기 위해서는 -value list로 하면된다.
 ~~~
-import heapq
+import heapq #import 문에서는 heapq -> q 주의
    
 works = [4,3,3] # heapq
 works = [-w for w in works] #max heapq
 
 works = [-w for w in works] #max heapq
-heapq.heapify(works) #heaq 구조 만들기!
-i = heapq.heappop(works) #pop
-heapq.heappush(works, i) #push(heaq, value)
+heapq.heapify(works) #heaq 구조 만들기! #기존 리스트를 heap구조로 초기화 시켜줘야함. & heapq 라이브러리 안에 heapify = heap + ify 기억
+i = heapq.heappop(works) #pop(heaq) #heapq 라이브러리 안에 heappop = heap + pop
+heapq.heappush(works, i) #push(heaq, value) #heapq 라이브러리 안에 heappush = heap + push
+#즉 라이브러리 안에 function 이름들은 q 빠져있음.
 ~~~
 
 # 다시 풀어볼 문제
