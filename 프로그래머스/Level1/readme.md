@@ -65,6 +65,21 @@ for absolute, sign in zip(absolutes, signs):
   print(absolute, sign)
 ~~~
 
+9. try-except 문
+- 오류 발생 시 바로 except 문 내용 실행.
+~~~
+# 정수로만 이루어진 문자열인지 확인
+def solution(s):
+    if len(s)==4 or len(s)==6:
+        try:
+            s = int(s)
+            return True
+        except:
+            return False
+    else:
+        return False
+~~~
+
 ## 직관적인 for 문 사용 (if 문만 = for문 뒤에, if-else문 = for문 앞에)
 ~~~
 #n=123, 각 자릿수 더하기
