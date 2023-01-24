@@ -55,7 +55,7 @@ def solution(seoul):
     return '김서방은 '+str(seoul.index('Kim'))+'에 있다'
 ~~~
 
-7. list, string 정렬 : .sort(reverse=True or False) 사용 | sorted(list, reverse=True or False) 사용.
+7. list, string 정렬 : .sort(reverse=True or False) 사용 | sorted(list or string, reverse=True or False) 사용.
 - .sort() 함수는 return 값이 없음.
 - sorted(list)는 list를 정렬하여 return
 
