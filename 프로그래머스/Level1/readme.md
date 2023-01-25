@@ -83,6 +83,16 @@ def solution(s):
 10. int()함수
 - int(value, 진법)
 - int(10,3) -> 101 변환 가능
+- ~~~
+- def solution(n):
+    tmp = ''
+    while n:
+        tmp += str(n % 3)
+        n = n // 3
+
+    answer = int(tmp, 3)
+    return answer
+- ~~~
 
 ## 직관적인 for 문 사용 (if 문만 = for문 뒤에, if-else문 = for문 앞에)
 ~~~
