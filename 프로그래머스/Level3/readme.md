@@ -45,4 +45,8 @@ heapq.heappush(works, i) #push(heaq, value) #heapq 라이브러리 안에 heappu
 2. <s>부분집합 원소 곱의 최대값 구하기. 
 - 증명해봐. </s> -> 1*(n-1) <= n/2 * n/2 증명가능
 3. 네트워크 -> DFS, BFS 두 개다 구현해보고 풀어보기
+- dfs : 재귀적인 방식 사용. if 방문한적 없음 and 이웃노드인 경우 
+    - dfs 재귀반복
+- bfs : stack구조 사용. if 방문한적 없음 and 이웃노드인 경우 
+    - stack에 추가. 같은 level 노드 다 탐색 후 return
 4. 디스크 컨트롤러 -> heapq 사용
