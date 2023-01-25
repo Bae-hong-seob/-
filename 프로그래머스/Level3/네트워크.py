@@ -1,22 +1,18 @@
 def solution(n, computers):
     
     visited = [False]*n
-    count = 0  
+    count = 0
     
-    def dfs(node):
+    def dfs(node): #dfs는 재귀적인 방식을 통해 구현함을 기억
         visited[node] = True
         
-        for neighbor in range(n): #인접 노드 탐색
-            if visited[neighbor] == False and computers[node][neighbor] == 1: #방문 X and 인접노드 일 때 
-                dfs(neighbor) 
-            else:
-                continue
-    
-    for node_idx in range(n): #모든 노드에 대해 반복 검사
-        if visited[node_idx] == False:
-            dfs(node_idx)
+        for i in range(n):
+            if visited[i] == False and computers[node][i] == True: #방문한적 없음 and 둘은 이웃노드인 경우
+                dfs(i)
+                
+    for node in range(n): #모든 노드에 대해 탐색
+        if visited[node] == False:
+            dfs(node)
             count+=1
-        else:
-            continue
-    
+            
     return count
