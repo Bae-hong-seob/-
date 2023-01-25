@@ -1,7 +1,7 @@
 def solution(n, computers):
     answer = 0
     visited = [0 for i in range(n)]
-    def dfs(computers, visited, start):
+    def bfs(computers, visited, start):
         stack = [start]
         while stack:
             j = stack.pop()
