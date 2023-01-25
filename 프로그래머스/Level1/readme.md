@@ -80,6 +80,10 @@ def solution(s):
         return False
 ~~~
 
+10. int()함수
+- int(value, 진법)
+- int(10,3) -> 101 변환 가능
+
 ## 직관적인 for 문 사용 (if 문만 = for문 뒤에, if-else문 = for문 앞에)
 ~~~
 #n=123, 각 자릿수 더하기
