@@ -130,7 +130,7 @@ def gcd(a, b):
         a, b = b, a % b
     return a
 ~~~
-- 최소공배수는 a, b의 곱을 a, b의 최대 공약수로 나누면 나오게 된다.
+    - 최소공배수는 a, b의 곱을 a, b의 최대 공약수로 나누면 나오게 된다.
 ~~~
 def lcm(a, b):
     return a * b / gcd(a, b)
