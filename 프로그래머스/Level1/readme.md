@@ -136,6 +136,12 @@ def solution(x, n):
     return [x+x*i for i in range(n)]
 ~~~
 
+~~~
+#range(start,end,간격)도 가능
+def solution(n):
+    return sum([i for i in range(2, n + 1, 2)]) 
+~~~
+
 ## 직관적인 return문 사용
 ~~~
 return num_p == num_y
