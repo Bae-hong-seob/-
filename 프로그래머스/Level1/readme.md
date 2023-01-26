@@ -94,6 +94,23 @@ def solution(n):
     return answer
 ~~~
 
+11. ord('A'), chr(65) 함수
+- ord(chr) : chr -> 아스키코드값 변환 함수
+- chr(int) : 아스키코드값 -> chr 변환 함수
+- if 문에 >='A' 처럼 문자열도 적용 가능
+~~~
+def solution(s, n):
+    answer = ''
+    for i in s:
+        if i:
+            if i >= 'A' and i <= 'Z':
+                answer += chr((ord(i) - ord('A') + n) % 26 + ord('A'))
+            elif i >= 'a' and i <= 'z':
+                answer += chr((ord(i) - ord('a') + n) % 26 + ord('a'))
+            else : answer += ' '
+    return answer
+~~~
+
 ## 직관적인 for 문 사용 (if 문만 = for문 뒤에, if-else문 = for문 앞에)
 ~~~
 #n=123, 각 자릿수 더하기
@@ -138,4 +155,12 @@ int(c) for c in x
 ~~~
 x = 123
 int(c) for c in str(x)
+~~~
+
+## if 문 조건식에 문자열도 사용 가능
+~~~
+    for i in s:
+      if i >= 'A' and i <= 'Z':
+          answer += chr((ord(i) - ord('A') + n) % 26 + ord('A'))
+      else : answer += ' '
 ~~~
