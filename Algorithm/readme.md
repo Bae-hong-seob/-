@@ -6,3 +6,6 @@
   - reversed()
   - a.reverse()
   - list[::-1]
+
+# 다시 풀어볼 문제
+1. 분수의 덧셈
