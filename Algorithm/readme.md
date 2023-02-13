@@ -7,7 +7,14 @@
   - a.reverse()
   - list[::-1]
   
-3. stack , queue -> from collections import deque 무조건 기억.  
+3. key값 기준 정렬
+~~~
+box = [[0,3],[7,2],[0,10]]
+box.sort(key = lambda x: x[1])
+~~~
+
+# 알고리즘
+1. stack , queue -> from collections import deque 무조건 기억.  
 ~~~
 from collections import deque
 
