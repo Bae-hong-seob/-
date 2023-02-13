@@ -7,7 +7,7 @@
   - a.reverse()
   - list[::-1]
   
-3. stack , queue -> 
+3. stack , queue -> from collections import deque 무조건 기억.
   -append
   -pop
 
