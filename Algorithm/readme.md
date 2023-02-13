@@ -7,9 +7,9 @@
   - a.reverse()
   - list[::-1]
   
-3. stack , queue -> from collections import deque 무조건 기억.
-  -append
-  -pop
-
+3. stack , queue -> from collections import deque 무조건 기억.  
+  -append  
+  -pop  
+  
 # 다시 풀어볼 문제
 1. 분수의 덧셈
