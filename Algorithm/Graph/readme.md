@@ -4,3 +4,5 @@
   graph = [[False]*5 for i in range(5)] #5*5 인접 행렬 생성
   graph[0][1] = True #0번 노드와 1번 노드 연결
   ~~~
+
+  - 인접 리스트 구현 : 
