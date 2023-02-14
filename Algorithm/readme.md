@@ -13,6 +13,10 @@ box = [[0,3],[7,2],[0,10]]
 box.sort(key = lambda x: x[1])
 ~~~
 
+4. 정렬
+  - 데이터에 따라 가장 빠른 정렬 알고리즘이 다르다.
+  - https://www.toptal.com/developers/sorting-algorithms
+
 # 알고리즘
 1. stack , queue -> from collections import deque 무조건 기억.  
 ~~~
