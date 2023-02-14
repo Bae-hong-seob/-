@@ -14,9 +14,8 @@ box.sort(key = lambda x: x[1])
 ~~~
 
 4. 정렬
-  - 데이터에 따라 가장 빠른 정렬 알고리즘이 다르다.
-  - https://www.toptal.com/developers/sorting-algorithms
-  1) 정렬  
+  - 데이터에 따라 가장 빠른 정렬 알고리즘이 다르다. https://www.toptal.com/developers/sorting-algorithms
+ 
     - 삽입정렬 : 선택한 요소를 삽입할 수 있는 위치를 찾아 삽입하는 정렬 알고리즘. O(N**2).
       - 단 어느정도 정렬되어 있는 상황에서는 퀵 정렬보다 빠름
     - 버블정렬 : 가장 인접한 요소를 비교하여 
@@ -24,7 +23,7 @@ box.sort(key = lambda x: x[1])
   2) 분산식 정렬 : "분할 정복"  
     - 합병정렬 : 분할 정복 알고리즘을 이용한 최선과 최악이 같은 안정적인 정렬 알고리즘. O(log N)
       - Divide & Conquer
-    - 
+    - 퀵 정렬 : 분할 정복 알고리즘을 이용한 매우 빠르지만 최악의 경우가 존재하는 불안정 정렬. O(log N)
 
 # 알고리즘
 1. stack , queue -> from collections import deque 무조건 기억.  
