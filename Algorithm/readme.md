@@ -16,6 +16,11 @@ box.sort(key = lambda x: x[1])
 4. 정렬
   - 데이터에 따라 가장 빠른 정렬 알고리즘이 다르다.
   - https://www.toptal.com/developers/sorting-algorithms
+    - 삽입정렬 : 선택한 요소를 삽입할 수 있는 위치를 찾아 삽입하는 정렬 알고리즘. O(N**2).
+      - 단 어느정도 정렬되어 있는 상황에서는 퀵 정렬보다 빠름
+    - 버블정렬 : 가장 인접한 요소를 비교하여 
+    - 선택정렬 : 선택한 요소와 가장 우선순위가 높은 요소를 교환하는 정렬 알고리즘. O(N**2)
+    - 
 
 # 알고리즘
 1. stack , queue -> from collections import deque 무조건 기억.  
