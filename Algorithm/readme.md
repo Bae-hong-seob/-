@@ -13,7 +13,7 @@ box = [[0,3],[7,2],[0,10]]
 box.sort(key = lambda x: x[1])
 ~~~
 
-4. 정렬
+4. 정렬  
 데이터에 따라 가장 빠른 정렬 알고리즘이 다르다. https://www.toptal.com/developers/sorting-algorithms
  
   - 삽입정렬 : 선택한 요소를 삽입할 수 있는 위치를 찾아 삽입하는 정렬 알고리즘. O(N**2).
