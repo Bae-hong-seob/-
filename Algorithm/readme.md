@@ -44,6 +44,9 @@ dp.count(x) #x와 같은 원소의 개수를 계산
 2. Greedy -> 직관적인 문제풀이.
 
 3. Graph 
-  
+ 
+4. hash -> python에서는 dictionary 쓰면됨.
+
+
 # 다시 풀어볼 문제
 1. 분수의 덧셈
