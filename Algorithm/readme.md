@@ -50,5 +50,9 @@ dp.count(x) #x와 같은 원소의 개수를 계산
 
 5. Tree
 
+6. Dynamic Programming
+
+7. heap : 이진트리 형태
+
 # 다시 풀어볼 문제
 1. 분수의 덧셈
