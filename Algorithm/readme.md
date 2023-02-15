@@ -48,6 +48,7 @@ dp.count(x) #x와 같은 원소의 개수를 계산
 4. hash -> python에서는 dictionary 쓰면됨.
     - list보다 dictionary가 탐색 훨씬 빠름. 기억
 
+5. Tree
 
 # 다시 풀어볼 문제
 1. 분수의 덧셈
