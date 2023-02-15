@@ -42,6 +42,7 @@ dp.count(x) #x와 같은 원소의 개수를 계산
 ~~~
 
 2. Greedy -> 직관적인 문제풀이.
+    - 특별한 알고리즘이 존재하지 않음
 
 3. Graph 
  
@@ -50,11 +51,14 @@ dp.count(x) #x와 같은 원소의 개수를 계산
 
 5. Tree
 
-6. Dynamic Programming
+6. Dynamic Programming : 문제를 작은 문제로 쪼개서 풀고 합치는 형태
+    - 특별한 알고리즘이 존재하지 않음
 
 7. heap : 이진트리 형태
+    - import heapq
 
 8. Brute Force(완전탐색)
+    - 특별한 알고리즘이 존재하지 않음
 
 # 다시 풀어볼 문제
 1. 분수의 덧셈
