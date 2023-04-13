@@ -9,3 +9,6 @@ def solution(my_string):
 ~~~
 answer = sorted(answer.items(), key = lambda item: item[1])
 ~~~
+
+# 스스로 해결 못한 문제
+1. 문자열안에 문자열
