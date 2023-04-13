@@ -131,6 +131,11 @@ def solution(absolutes, signs):
 ~~~
 
 ~~~
+# if-elif-else 사용할 경우 if else if else 구조 사용할 것.
+steering_angles = [[1,0,0] if i==45 else [0,1,0] if i==90 else [0,0,1] for i in steering_angles]
+~~~
+
+~~~
 #연산식도 가능
 def solution(x, n):
     return [x+x*i for i in range(n)]
