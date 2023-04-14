@@ -81,8 +81,8 @@ def solution(s):
 ~~~
 
 10. int()함수
-- int(value, 진법)
-- int(10,3) -> 101 변환 가능
+- int('value', 진법)
+- int('10',2) -> '10'을 2진법으로 쓰인 수라 생각 : 2+0 = 2를 return
 ~~~
 def solution(n):
     tmp = ''
