@@ -5,3 +5,13 @@
 
 
 구현 : 구현해야 할 소스코드의 양이 매우 많은 문제도 출제.
+
+~~~
+# 문자를 하나씩 확인하며
+for x in data:
+            # 알파벳인 경우 결과 리스트에 삽입
+            if x.isalpha():
+                        result.append(x)
+            else:
+                        value+=int(x)
+~~~
