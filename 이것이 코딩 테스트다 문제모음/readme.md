@@ -1,7 +1,8 @@
 가장 난이도 낮은 문제 : 구현, 그리디 알고리즘 -> 합격을 좌우한다. 꼭 해결해야함.  
 11-6 무지 먹방 다시풀기  
 12-4 자물쇠와 열쇠 다시풀기  
-- def rotation(matrix) 암기.  
+- def rotation(matrix) 암기.
+
 12-6 기둥과 보 설치 다시풀기
 - def check_available 잘 했음. 
 
