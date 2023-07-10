@@ -15,3 +15,13 @@ for x in data:
             else:
                         value+=int(x)
 ~~~
+
+부분집합 구하기
+~~~
+from itertools import combinations 
+
+arr = [1,2,3]
+
+print(list(combinations(arr,1)))
+#[(1,), (2,), (3,)]
+~~~
