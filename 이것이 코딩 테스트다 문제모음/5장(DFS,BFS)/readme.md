@@ -15,4 +15,7 @@
 - list.append(3)
 - list.pop()
 
-3. 
+3. python 큐 : from collections import deque 기억.
+- dq = deque() 기억.
+- dq.pop(), dq.popleft()
+- dq.append(), dq.appendleft()
