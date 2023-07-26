@@ -19,3 +19,5 @@ input_data = sys.stdin.readline().rstrip()
 # 입력받은 문자열 그대로 출력
 print(input_data)
 ~~~
+
+# 입력 데이터가 많을때 sys 라이브러리. sys.stdin.readline().rstrip() 그냥 암기해.
