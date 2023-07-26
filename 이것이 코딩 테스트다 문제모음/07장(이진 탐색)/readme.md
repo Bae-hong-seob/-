@@ -8,3 +8,14 @@
 - 시간복잡도 최악의 경우 O(log N)
 
 # 데이터 탐색 개수가 1,000만 단위가 넘어간다면 O(log N)을 고려. 이진탐색 활용
+# 탐색 범위 크기가 1,000억 이상이라면 이진 탐색 알고리즘 활용
+
+~~~
+import sys
+
+# 하나의 문자열 데이터 입력받기
+input_data = sys.stdin.readline().rstrip()
+
+# 입력받은 문자열 그대로 출력
+print(input_data)
+~~~
