@@ -21,3 +21,6 @@ print(input_data)
 ~~~
 
 ## 입력 데이터가 많을때 sys 라이브러리. sys.stdin.readline().rstrip() 그냥 암기해.
+
+파라메트릭 서치(parametric Search) 문제 : 최적화 문제를 결정 문제로 바꾸어 해결하는 기법
+- '원하는 조건을 만족하는 가장 알맞는 값을 찾는 문제'에 사용. -> 이진 탐색 활용
