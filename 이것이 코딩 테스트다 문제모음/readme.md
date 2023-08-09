@@ -27,6 +27,9 @@
 15-4 가사 검색 다시풀기
 - from bisect import bisect_left, bisect_right 기억
 
+16-4 병사 배치하기 다시풀기
+- 가장 긴 증가하는 부분 수열 : 전형적인 다이나믹 프로그래밍 문제 (LIS : Longest Increasing Subsequence)
+
 # 1장
 1. 시간복잡도 : 데이터 개수(N), 시간제한 1초
    1. N < 500 : O(N***3)
