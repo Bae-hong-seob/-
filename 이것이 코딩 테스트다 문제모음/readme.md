@@ -205,3 +205,13 @@
 **다익스트라 최단 경로 알고리즘 힙(heap) 구조를 이용하여 구현**
 - 힙 : 우선순위 큐. (정렬 기준, 물건)으로 만들 것.
 - import heapq
+
+## 플로이드 워셜 최단 경로 알고리즘
+- 다이나믹  프로그래밍 : 점화식 min(graph[i][j] , graph[i][k] + graph[k][j])
+~~~
+# 1번 노드에서 출발 K까지 최단경로 + K에서 X 최단경로
+for k in range(1,N+1): # 모든 노드에 대해 반복
+    for a in range(1,N+1):
+        for b in range(1,N+1):
+            graph[a][b] = min(graph[a][b], graph[a][k]+graph[k][b])
+~~~
