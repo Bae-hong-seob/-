@@ -25,3 +25,17 @@ arr = [1,2,3]
 print(list(combinations(arr,1)))
 #[(1,), (2,), (3,)]
 ~~~
+
+3. matrix rotation 90도 기억하기
+~~~
+def rotation(original):
+    n = len(original) # 행
+    m = len(original[0]) # 열
+    
+    result = [[0]*n for _ in range(m)]
+    for i in range(n):
+        for j in range(m):
+            result[j][n-i-1] = original[i][j]
+            
+    return result
+~~~
