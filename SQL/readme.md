@@ -10,3 +10,7 @@ ORDER BY column1 DESC, column2;
 SELECT column1 as change_name FROM table_name
 ~~~
 
+결측치 대체
+~~~
+COALESCE(TLNO, 'NONE') AS TLNO
+~~~
