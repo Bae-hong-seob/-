@@ -1,35 +1,34 @@
 def solution(s):
-    if len(s) == 1:
-        return 1
-    
-    result = 1000
-    for length in range(1,len(s)//2 +1):
-        s_split = [s[i:i+length] for i in range(0,len(s),length)]
+    answers = []
+    min_length = len(s)
+    for length in range(1,len(s)//2 + 1):
+        candidates = [s[i:i+length] for i in range(0,len(s),length)]
+        #print(candidates)
         
-        stack = []
-        count = 0
+        prev, count = '', 1
         answer = ''
-        for alpha in s_split:
-            if len(stack)==0:
-                stack.append(alpha)
+        for candidate in candidates:
+            if prev == candidate: # 압축
                 count+=1
-                continue
-            
-            if stack[-1] == alpha: # 압축하는 경우
-                count+=1
-            else: # 압축 안되는 경우
-                if count > 1:
-                    answer+=str(count)+stack[-1]
-                else:
-                    answer+=stack[-1]
                 
+            else:
+                if count > 1:
+                    answer+= str(count)+prev
+                else:
+                    answer+=prev
+                    
+                prev = candidate # 기준 수정
                 count = 1
-                stack.append(alpha)
+                
         if count > 1:
-            answer+=str(count)+stack[-1]
+            answer+= str(count)+prev
         else:
-            answer+=stack[-1]
-        
-        result = min(result, len(answer))
-        
-    return result
+            answer+=prev
+            
+        answers.append(answer)
+        min_length = min(min_length, len(answer))
+    
+    # for answer in answers:
+    #     print(answer, len(answer))
+    
+    return min_length
