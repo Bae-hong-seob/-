@@ -43,7 +43,6 @@ print(round(a,4)) #0.9
 - lambda x:x[1]
 - sorted()
 - sum()
-- 
 ~~~
 import heapq #heap 자료구조
 import bisect #이진탐색
