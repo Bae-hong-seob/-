@@ -20,7 +20,7 @@ a = 0.3 + 0.6
 print(a) #0.89999999
 print(round(a,4)) #0.9
 ~~~
-- str(문자형)
+- str(문자형) : 더하기 연산 가능, index 0부터, slicing 기법
 - list(배열) : index는 0부터, slicing 기법, **comprehension**
   - 사용가능한 내장 함수 : .append(), .pop(), .sort(), .reverse(), .count(), .remove(), .insert(index, value)
   - ~~~
