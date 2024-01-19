@@ -37,3 +37,19 @@ print(round(a,4)) #0.9
 - set(집합 자료형) : 중복 x, 순서 x(데이터 조회, 수정은 O(1))
   - a|b(합집합), a&b(교집합), a-b(차집합) 연산 지원
   - .add(value), .update([value1, value2]), .remove(value)
+
+파이썬 꼭 익혀야할 기본 함수, 표준 라이브러리
+- map()
+- lambda x:x[1]
+- sorted()
+- sum()
+- 
+~~~
+import heapq #heap 자료구조
+import bisect #이진탐색
+import math 
+
+from itertools import permutations, combinations, product, combinations_with_replacement #순열, 조합, 중복허용 순열, 중복허용 조합
+from collections import deque, Counter #queue 자료구조, 객체 내 원소 개수 세기.
+from math import gcd #최대 공약수
+~~~
