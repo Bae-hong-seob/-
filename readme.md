@@ -21,4 +21,5 @@ print(a) #0.89999999
 print(round(a,4)) #0.9
 ~~~
 - str(문자형)
-- list(배열) : 
+- list(배열) : index는 0부터, slicing 기법, **comprehension**
+  - 사용가능한 내장 함수 : .append(), .pop(), .sort(), .reverse(), .count(), .remove(), .insert(index, value)
