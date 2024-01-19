@@ -11,7 +11,7 @@
 - 100,000 < N < 10,000,000 : O(N)  
 이정도면 풀 수 있음.
 
-파이썬 자료형 : int, float, str, list, tuple, dict, set
+## 파이썬 자료형 : int, float, str, list, tuple, dict, set
 - int(정수형) : 양/음수
 - float(실수형) : 이때 컴퓨터는 2진법이므로 사소한 오류가 있을 수 있다. 이는 1/3을 10진법으로 표현할 수 없는 것과 같은 개념.
   - 개발과정에서 이런 손실값으로 인한 에러를 방지하기 위해 round() 함수를 사용해주는 것이 좋다.
@@ -38,7 +38,7 @@ print(round(a,4)) #0.9
   - a|b(합집합), a&b(교집합), a-b(차집합) 연산 지원
   - .add(value), .update([value1, value2]), .remove(value)
 
-파이썬 꼭 익혀야할 기본 함수, 표준 라이브러리
+## 파이썬 꼭 익혀야할 기본 함수, 표준 라이브러리
 - map()
 - lambda x:x[1]
 - sorted()
