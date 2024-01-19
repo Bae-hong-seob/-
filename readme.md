@@ -23,3 +23,10 @@ print(round(a,4)) #0.9
 - str(문자형)
 - list(배열) : index는 0부터, slicing 기법, **comprehension**
   - 사용가능한 내장 함수 : .append(), .pop(), .sort(), .reverse(), .count(), .remove(), .insert(index, value)
+  - ~~~
+    a = [1,2,3,4,5,5,5]
+    remove_set = {3,5}
+
+    result = [i for i in a if i not in remove_set]
+    print(result) #[1,2,4] 즉 원하는 값 모두 제거.
+    ~~~
