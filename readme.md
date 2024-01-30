@@ -53,3 +53,6 @@ from collections import deque, Counter #queue 자료구조, 객체 내 원소 �
 from math import gcd #최대 공약수
 ~~~
 
+## 파이썬 꼭 외워야할 자료구조
+
+### DFS : stack
