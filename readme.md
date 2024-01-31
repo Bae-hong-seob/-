@@ -65,4 +65,3 @@ from math import gcd #최대 공약수
 1. 시작노드를 queue에 삽입 후 방문처리
 2. queue의 맨 앞 노드를 방문 후 인접한 자식 노드 중 방문하지 않은 노드를 모두 queue에 삽입
 3. 반복
-
