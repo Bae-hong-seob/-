@@ -48,7 +48,7 @@ import heapq #heap 자료구조
 import bisect #이진탐색
 import math 
 
-from itertools import permutations, combinations, product, combinations_with_replacement #순열, 조합, 중복허용 순열, 중복허용 조합
+from itertools import permutations, product, combinations, combinations_with_replacement #순열, 중복허용 순열, 조합, 중복허용 조합
 from collections import deque, Counter #queue 자료구조, 객체 내 원소 개수 세기.
 from math import gcd #최대 공약수
 ~~~
