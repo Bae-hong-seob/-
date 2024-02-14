@@ -2,20 +2,13 @@ from collections import deque
 
 def solution(people, limit):
     people.sort()
-    people = deque(people)
-    answer = 0
+    dq = deque(people)
     
-    while(len(people) != 0):
-        if len(people) == 1:
-            answer+=1
-            return answer
-        if people[0] + people[-1] > limit:
-            people.pop()
-            answer+=1
-        else:
-            people.popleft()
-            people.pop()
-            answer+=1
+    number_of_boats = 0
+    while dq:
+        max_weight = dq.pop()
+        if dq and dq[0] + max_weight <= limit: #두명 같이 태울 수 있는 경우
+            dq.popleft()
+        number_of_boats+=1
         
-
-    return answer
+    return number_of_boats
