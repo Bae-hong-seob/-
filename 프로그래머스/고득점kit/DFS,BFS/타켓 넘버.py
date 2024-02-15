@@ -1,30 +1,16 @@
 from collections import deque
 
 def solution(numbers, target):
-    dq = deque([])
-    dq.append(numbers[0])
+    #print(2**20) #완전탐색 시간복잡도 확인. 1,048,576. 완전탐색 가능.
+    queue = deque([0])
     
-    for idx, number in enumerate(numbers):
-        if idx == 0:
-            continue
+    for number in numbers:
+        new_queue = deque()
+        while queue:
+            now = queue.popleft()
+            new_queue.append(now+number)
+            new_queue.append(now-number)
+        queue = new_queue
         
-        for _ in range(len(dq)):
-            now = dq.popleft()
-            dq.append(now+number)
-            dq.append(now-number)
-            
-    answer = sum([1 for number in dq if number == target])
-    
-    dq = deque([])
-    dq.append(-numbers[0])
-    for idx, number in enumerate(numbers):
-        if idx == 0:
-            continue
-        
-        for _ in range(len(dq)):
-            now = dq.popleft()
-            dq.append(now+number)
-            dq.append(now-number)
-            
-    answer += sum([1 for number in dq if number == target])
-    return answer
+    queue = list(queue)
+    return queue.count(target)

@@ -1,19 +1,27 @@
 from collections import deque
 
+def bfs(graph, start, visited):
+    queue = deque([start])
+    while queue:
+        now = queue.popleft()
+        visited[now] = True # 방문처리
+        for neighbor in graph[now]:
+            if visited[neighbor] == False:
+                queue.append(neighbor)
+        
+        
 def solution(n, computers):
-    count = 0
     visited = [False]*n
+    graph = [[] for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            if i != j and computers[i][j]==1:
+                graph[i].append(j)
+    
+    count = 0
     for start in range(n):
         if visited[start] == False:
-            dq = deque([start])
+            bfs(graph, start, visited)
             count+=1
-
-            while dq:
-                now = dq.popleft()
-                visited[now] = True
-                for idx, computer in enumerate(computers[now]):
-                    if computer == 1 and visited[idx] == False:
-                        dq.append(idx)
-        
-        
+            
     return count
