@@ -43,6 +43,7 @@ print(round(a,4)) #0.9
 - lambda x:x[1]
 - sorted()
 - sum()
+- format(value, 'b' or 'o' or 'e') #value는 10진수를 2진수, 8진수, 16진수로 변환)
 ~~~
 import heapq #heap 자료구조
 import bisect #이진탐색
