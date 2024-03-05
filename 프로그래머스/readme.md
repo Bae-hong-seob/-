@@ -11,4 +11,11 @@ def is_prime_number(x):
             return False # 소수가 아님
     return True # 소수임
 ~~~
-2. 
+2. 10진법 -> k진법 변환
+~~~
+k_n = ''
+while n>0: #k진수 변환.
+    n, last = n//k, n%k
+    k_n = str(last) + k_n
+~~~
+3. 
