@@ -16,7 +16,7 @@ def check(board,row, column):
         return False
     
 def change(board, row,column):
-    for i in reversed(range(row)):
+    for i in reversed(range(row+1)):
         board[i+1][column] = board[i][column]
         board[i][column] = '0'
     
@@ -47,8 +47,6 @@ def solution(m, n, board):
         for row in range(m): #최대 900개
             for column in range(n):
                 if row+1 < m and board[row+1][column]=='0': # 아래 빈 공간이 존재하는 경우 떨어진다.
-                    board[row+1][column] = board[row][column]
-                    board[row][column] = '0'
                     change(board, row,column)
 
         # print()
