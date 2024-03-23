@@ -8,7 +8,7 @@ WEHRE column1>10 and column2>2
 GROUP BY
 HAVING
 ORDER BY column1 DESC, column2
-LIMIT
+LIMIT 3 #결과값 상위 3개만 출력
 OFFSET
 ~~~
 
