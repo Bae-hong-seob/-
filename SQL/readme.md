@@ -7,7 +7,7 @@ JOIN table1 ON table1.column2 = table2.column5
 WEHRE column1>10 and column2>2
 GROUP BY
 HAVING
-ORDER BY column1 DECS, column2
+ORDER BY column1 DESC, column2
 LIMIT
 OFFSET
 ~~~
