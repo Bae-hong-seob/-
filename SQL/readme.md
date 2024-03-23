@@ -1,9 +1,9 @@
 # 기본 공식(암기 필수)
 ~~~
-SELECT column1,column2,etc...
-DISTINCT
+SELECT column1,column2,etc... # '*' 는 모든 열을 의미.
+DISTINCT table1.column1 #column1은 중복된 값 제거.
 FROM table1
-JOIN table1, table2 ON
+JOIN table1 ON table1.column2 = table2.column5
 WEHRE column1>10 and column2>2
 GROUP BY
 HAVING
