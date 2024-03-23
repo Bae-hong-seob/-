@@ -16,3 +16,4 @@ OFFSET
 - DATETIME 관련하여 YEAR(), MONTH(), DAY() 함수 기억
 - COUNT() 함수
 - 변수명 변경: AS -> COUNT(table.column) AS 개수
+- SUBSTR(string, start_index, end_index) : 이때 파이썬과 달리 index 1부터 시작한다
