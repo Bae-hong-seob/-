@@ -13,4 +13,6 @@ OFFSET
 ~~~
 
 # 내장 함수
-DATETIME 관련하여 YEAR(), MONTH(), DAY() 함수 기억
+- DATETIME 관련하여 YEAR(), MONTH(), DAY() 함수 기억
+- COUNT() 함수
+- 변수명 변경: AS -> COUNT(table.column) AS 개수
