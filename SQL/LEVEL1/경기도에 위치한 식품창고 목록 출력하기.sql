@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+SELECT WAREHOUSE_ID,WAREHOUSE_NAME,ADDRESS, COALESCE(FREEZER_YN, 'N') AS FREEZER_YN
+FROM food_warehouse
+WHERE address LIKE '경기도%'
+ORDER BY warehouse_id
