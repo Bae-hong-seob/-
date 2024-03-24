@@ -25,11 +25,14 @@ OFFSET
   ~~~
 - COALESCE(column1, 'N') -> column1의 결측치를 'N'으로 대체.
 - DATE_FORMAT(column1, '%Y-%m-%d) -> datetime을 어떻게 표현할 것인가에 대해
-  - 예시로 2024-03-01 23:05:01이 있다고 하자.
-  - %Y : 2024, %y : 24
-  - %M : March, %m : 03, %c : 3
-  - %D : 1st, %d : 1
-  - %H : 23, %h : 11
-  - %i : 05
-  - %s : 01
+  ~~~
+  예시로 2024-03-01 23:05:01이 있다고 하자.
+  %Y : 2024, %y : 24
+  %M : March, %m : 03, %c : 3
+  %D : 1st, %d : 1
+  %H : 23, %h : 11
+  %i : 05 # m이 month랑 minute 둘다 의미하기 때문에 필수로 외워야함. m은 month, i는 m'i'nute
+  %s : 01
+  ~~~
+
 - SUBSTR(string, start_index, end_index) : 이때 파이썬과 달리 index 1부터 시작한다
