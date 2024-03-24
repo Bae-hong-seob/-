@@ -23,4 +23,5 @@ OFFSET
   WHERE name LIKE '%el%' AND animal_type = 'Dog'
   ORDER BY name
   ~~~
+- COALESCE(column1, 'N') -> column1의 결측치를 'N'으로 대체.
 - SUBSTR(string, start_index, end_index) : 이때 파이썬과 달리 index 1부터 시작한다
