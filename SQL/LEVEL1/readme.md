@@ -23,7 +23,7 @@ OFFSET
   WHERE name LIKE '%el%' AND animal_type = 'Dog'
   ORDER BY name
   ~~~
-- COALESCE(column1, 'N') -> column1의 결측치를 'N'으로 대체.
+- COALESCE(column1, 'N') -> column1의 결측치를 'N'으로 대체. 발음 코 얼레스. CO AL ESCE
 - DATE_FORMAT(column1, '%Y-%m-%d) -> datetime을 어떻게 표현할 것인가에 대해
   ~~~
   예시로 2024-03-01 23:05:01이 있다고 하자.
