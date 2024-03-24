@@ -16,4 +16,11 @@ OFFSET
 - DATETIME 관련하여 YEAR(), MONTH(), DAY() 함수 기억
 - COUNT() 함수
 - 변수명 변경: AS -> COUNT(table.column) AS 개수
+- LIKE 연산자. 조건문에 쓰임 -> '%탐색문자%' C언어 배울때 배우던거
+  ~~~
+  SELECT ANIMAL_ID, NAME
+  FROM ANIMAL_INS
+  WHERE NAME LIKE '%el%' and ANIMAL_TYPE = 'Dog'
+  ORDER BY NAME
+  ~~~
 - SUBSTR(string, start_index, end_index) : 이때 파이썬과 달리 index 1부터 시작한다
