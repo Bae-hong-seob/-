@@ -16,10 +16,6 @@ OFFSET
 
 사용할 수 있는 내장 라이브러리 : SUM(), AVG(), ROUND(value,0)  
 
-칼럼 명 수정
-~~~
-SELECT column1 as change_name FROM table_name
-~~~
 
 결측치 대체
 ~~~
