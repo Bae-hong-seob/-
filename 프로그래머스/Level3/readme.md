@@ -39,6 +39,9 @@ heapq.heappush(works, i) #push(heaq, value) #heapq 라이브러리 안에 heappu
 #즉 라이브러리 안에 function 이름들은 q 빠져있음.
 ~~~
 
+## 5. 투포인터 알고리즘
+https://blog.naver.com/kks227/220795165570
+
 # 다시 풀어볼 문제
 1. <s>이중우선순위큐 -> heapq 이용하여 다시 풀어볼 것</s>
 - https://littlefoxdiary.tistory.com/3 참고
