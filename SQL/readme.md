@@ -3,7 +3,7 @@
 SELECT column1,column2,etc... # '*' 는 모든 열을 의미.
 DISTINCT table1.column1 #column1은 중복된 값 제거.
 FROM table1
-JOIN table1 ON table1.column2 = table2.column5
+JOIN table1 ON table1.column2 = table2.column5 #기본적으로 INNER 조인을 의미함. LEFT OUTER JOIN / RIGHT OUTER JOIN 을 사용하는 경우도 존재
 WEHRE column1>10 and column2>2
 GROUP BY
 HAVING
