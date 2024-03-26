@@ -35,5 +35,5 @@ OFFSET
   %i : 05 # m이 month랑 minute 둘다 의미하기 때문에 필수로 외워야함. m은 month, i는 m'i'nute
   %s : 01
   ~~~
-
+- SELECT IF(column > 3, 'Y', 'N') -> if(조건문, 참일 때 반환 값, 거짓일 때 반환 값)
 - SUBSTR(string, start_index, end_index) : 이때 파이썬과 달리 index 1부터 시작한다
