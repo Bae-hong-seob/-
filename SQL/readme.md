@@ -16,8 +16,18 @@ OFFSET
   - 집계함수 종류: SUM(), MAX(), MIN(), COUNT(), AVG, STDEV(), VAR()
   - 따라서 이외의 SELECT 문에 column명을 적어야한다면 GROUP BY가 아니라 WHERE (column1, column2) IN (SELECT FROM WEHRE ~) 식의 서브쿼리 방법을 이용해야한다.
 
-
-사용할 수 있는 내장 라이브러리 : SUM(), AVG(), ROUND(value,0)  
+# 서브쿼리 활용 잘하기.
+~~~
+-- 코드를 작성해주세요
+SELECT YEAR(DIFFERENTIATION_DATE) AS YEAR, MAX_SIZE-size_of_colony AS YEAR_DEV, ID
+FROM ecoli_data AS A
+JOIN (
+    SELECT YEAR(DIFFERENTIATION_DATE) AS BORN_YEAR, MAX(size_of_colony) AS MAX_SIZE
+    FROM ecoli_data
+    GROUP BY YEAR(DIFFERENTIATION_DATE)
+) AS B ON YEAR(A.DIFFERENTIATION_DATE) = B.BORN_YEAR
+ORDER BY YEAR, YEAR_DEV
+~~~
 
 
 결측치 대체
