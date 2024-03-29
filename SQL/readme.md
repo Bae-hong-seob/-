@@ -12,7 +12,7 @@ LIMIT 3 #결과값 상위 3개만 출력
 OFFSET
 ~~~
 
-
+- 그룹화 한 다음엔 일반 컬럼은 SELECT 할 수 없다. GROUP BY 절에 명시된 컬럼만 SELECT 된다 
 
 사용할 수 있는 내장 라이브러리 : SUM(), AVG(), ROUND(value,0)  
 
