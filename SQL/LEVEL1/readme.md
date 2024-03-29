@@ -38,4 +38,5 @@ OFFSET
 - SELECT IF(column > 3, 'Y', 'N') -> if(조건문, 참일 때 반환 값, 거짓일 때 반환 값)
   - IF(column <=3, 'LOW', IF(column<=10, 'MEDIUM", "HIGH)) 이렇게 쓸 수도 있음. 3이하일 때는 'LOW', 3초과 10이하일 때는 "MEDIUM", 10초과일 때는 'HIGH"
 - CONCAT()함수. -> CONCAT(MAX(length), 'cm')
+  - CONCAT(MAX(length),'verse' ,'cm') 이렇게 3개를 넣어도 됨
 - SUBSTR(string, start_index, end_index) : 이때 파이썬과 달리 index 1부터 시작한다
