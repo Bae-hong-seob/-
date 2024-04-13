@@ -78,11 +78,11 @@ combinations_with_replacement(n,[],0)
 ~~~
 def rotation90(original):
     N,M = len(original), len(original[0])
-    result = [[0]*n for _ in range(M)]
+    result = [[0]*N for _ in range(M)]
 
     for i in range(N):
         for j in range(M):
-            result[j][n-i-1] = origianl[i][j]
+            result[j][N-i-1] = original[i][j]
 
     return result
 
@@ -99,13 +99,13 @@ def rotation270(original):
 
 - 180도 회전 : 가로,세로 길이가 일정
 ~~~
-def rotation180(original)
+def rotation180(original):
     N,M = len(original), len(original[0])
     result = [[0]*M for _ in range(N)]
 
     for i in range(N):
         for j in range(M):
-            result[n-i-1][m-j-1] = original[i][j]
+            result[N-i-1][M-j-1] = original[i][j]
 
     return result
 ~~~
