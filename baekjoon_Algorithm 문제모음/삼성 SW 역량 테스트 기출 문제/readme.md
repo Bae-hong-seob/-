@@ -12,4 +12,27 @@ def combinations(n,new_arr,c):
         return new_arr
     for i in range(c,len(arr)):
         combinations(n,new_arr+[arr[i]],i+1)
+
+combinations(n,[],0)
+~~~
+
+## 순열(permutations) 구현
+~~~
+arr = [1,2,3,4,5]
+visited = [False]*len(arr)
+candidates = []
+
+def permutations(n,new_arr):
+    global arr, candidates
+    if len(new_arr)==n:
+        candidates.append(new_arr)
+        return
+
+    for i in range(len(arr)):
+        if not visited[i]:
+            visited[i]=True
+            permutations(n,new_arr+[arr[i]])
+            visited[i]=False
+
+permutations(n,[])
 ~~~
