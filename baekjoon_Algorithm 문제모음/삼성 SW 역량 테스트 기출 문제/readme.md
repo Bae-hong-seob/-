@@ -86,7 +86,7 @@ def rotation(original):
     return result
 ~~~
 
--180도 회전 : 가로,세로 길이가 일정
+- 180도 회전 : 가로,세로 길이가 일정
 ~~~
 def rotation(original)
     N,M = len(original), len(original[0])
