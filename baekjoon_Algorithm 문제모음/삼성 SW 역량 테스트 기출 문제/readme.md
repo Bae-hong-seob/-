@@ -74,8 +74,9 @@ combinations_with_replacement(n,[],0)
 
 ## 배열 회전
 - 90도 회전 : 가로,세로 길이가 바뀜
+- 270도 회전: 가로,세로 길이가 바뀜
 ~~~
-def rotation(original):
+def rotation90(original):
     N,M = len(original), len(original[0])
     result = [[0]*n for _ in range(M)]
 
@@ -84,11 +85,21 @@ def rotation(original):
             result[j][n-i-1] = origianl[i][j]
 
     return result
+
+def rotation270(original):
+    N,M = len(original), len(original[0])
+    result = [[0]*N for _ in range(M)]
+
+    for i in range(N):
+        for j in range(M):
+            result[M-1-j][i] = original[i][j]
+
+    return result
 ~~~
 
 - 180도 회전 : 가로,세로 길이가 일정
 ~~~
-def rotation(original)
+def rotation180(original)
     N,M = len(original), len(original[0])
     result = [[0]*M for _ in range(N)]
 
