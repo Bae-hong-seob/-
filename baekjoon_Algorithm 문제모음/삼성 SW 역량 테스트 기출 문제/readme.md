@@ -36,3 +36,21 @@ def permutations(n,new_arr):
 
 permutations(n,[])
 ~~~
+
+## 중복순열(product) 구현
+~~~
+arr = [1,2,3,4,5]
+candidates=[]
+
+def product(n,new_arr):
+    global arr,candidates
+    if len(new_arr)==n:
+        candidates.append(new_arr)
+        return
+
+    for i in range(len(arr)):
+        product(n,new_arr+[arr[i]])
+
+
+product(n,[])
+~~~
