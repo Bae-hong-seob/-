@@ -70,3 +70,16 @@ def combinations_with_replacement(n,new_arr,c):
 
 combinations_with_replacement(n,[],0)
 ~~~
+
+
+## 배열 회전
+- 90도 회전
+~~~
+def rotations(original):
+    N,M = len(original), len(original[0])
+    result = [[0]*n for _ in range(M)]
+
+    for i in range(N):
+        for j in range(M):
+            result[j][n-i-1] = origianl[i][j]
+~~~
