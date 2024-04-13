@@ -54,3 +54,19 @@ def product(n,new_arr):
 
 product(n,[])
 ~~~
+
+## 중복 조합(combinations_with_replacement)
+~~~
+arr = [i for i in range(1,N+1)]
+candidates = []
+
+def combinations_with_replacement(n,new_arr,c):
+    if len(new_arr)==n:
+        candidates.append(new_arr)
+        return
+
+    for i in range(c,len(arr)):
+        combinations_with_replacement(n,new_arr+[arr[i]],i)
+
+combinations_with_replacement(n,[],0)
+~~~
