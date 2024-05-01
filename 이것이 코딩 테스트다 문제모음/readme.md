@@ -22,12 +22,14 @@
 - 예제는 통과. 시간초과임. 자료구조(정렬)에 대한 이해 필요
 
 15-3 공유기 설치 다시 풀기
-- gap을 이진탐색 mid로 생각하는 아이디어  
+- gap을 이진탐색 mid로 생각하는 아이디어
+
 15-4 가사 검색 다시풀기
 - from bisect import bisect_left, bisect_right 기억
 
 16-3 퇴사 다시풀기
-- 점화식 잘 생각하기.
+- 점화식 잘 생각하기
+
 16-4 병사 배치하기 다시풀기
 - 가장 긴 증가하는 부분 수열 : 전형적인 다이나믹 프로그래밍 문제 (LIS : Longest Increasing Subsequence)
 
