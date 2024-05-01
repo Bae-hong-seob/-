@@ -22,7 +22,7 @@
 - 예제는 통과. 시간초과임. 자료구조(정렬)에 대한 이해 필요
 
 15-3 공유기 설치 다시 풀기
-- gap을 이진탐색 mid로 생각하는 아이디어
+- gap을 이진탐색 mid로 생각하는 아이디어  
 15-4 가사 검색 다시풀기
 - from bisect import bisect_left, bisect_right 기억
 
